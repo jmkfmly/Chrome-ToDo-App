@@ -1,0 +1,61 @@
+*{
+    padding:0;
+    margin: 0;
+}
+body{
+    background-color: #336d88;
+    color:white;
+    width: 100%;
+    height: 100%;
+}
+.wrap{
+    width: 100%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.clock .clockTitle{
+    font-size: 140px;
+}
+.grettingForm input,
+.gretting{
+    font-size: 25px;
+}
+.gretting input{
+    border-bottom: 1px solid white;
+}
+
+
+
+
+.js-grettingForm,
+.gretting{
+    display: none;
+}
+.showing{
+    display: block;
+}
+.bodyBackground{
+    position: absolute;
+    width: 100%;
+    height:  100%;
+    top:0;
+    left: 0;
+    z-index:  -1;
+    object-fit: cover;
+    animation: fadeIn .5s linear;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
